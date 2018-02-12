@@ -1,0 +1,240 @@
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  font-size: 100px;
+  font-family: Helvetica;
+  margin: 0 auto;
+  box-sizing:border-box;
+  -webkit-tap-highlight-color: transparent;
+  color: #252525;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+body, body:before, body:after {
+  max-width: 640px;
+  margin: 0 auto;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body,html{
+  height: 100%;
+}
+
+img, object, embed {
+  max-width: 100%;
+}
+
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+input[type=text], textarea, input {
+  -webkit-appearance: none;
+}
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  -webkit-touch-callout:none;
+  -ms-touch-callout:none;
+  -o-touch-callout:none;
+  -moz-touch-callout:none;
+  touch-callout:none;
+}
+a:active{
+    color: #fff;
+}
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+input::-webkit-input-placeholder {
+  font-size: 0.13rem;
+  color: #999;
+}
+::-webkit-search-cancel-button {
+	display: none;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+small {
+  font-size: 85%;
+  margin-top: 0.02rem;
+}
+strong {
+  font-weight: bold;
+}
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* hand cursor on clickable elements */
+.clickable, label, input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-size: 0.13rem;
+}
+
+/* make buttons play nice in IE */
+button, input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.bghighlight:active{
+  background-color: #f4f6f7;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.ellip{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body {
+  background-color: rgb(240, 242, 245);
+  font-size: 0.13rem;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  /*font-family: Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,STXihei,SimHei,WenQuanYi Micro Hei,Droid Sans,sans-serif;*/
+  /*font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;*/
+}
+button, input {
+  /* font-family: "SimHei", "Helvetica Neue", Arial, "Droid Sans", sans-serif; */
+  outline: none;
+}
+[v-cloak]{
+  display: none;
+}
+
+/* @media screen and (min-width: 320px) {
+  html {
+    font-size: 85.714px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 111.1px;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 122.2px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 133.3px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 177.8px;
+  }
+} */
